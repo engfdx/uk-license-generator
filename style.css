@@ -1,5 +1,101 @@
 body {
     font-family: sans-serif;
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Take full viewport height */
+    margin: 0;
+    background: #f0f0f0; /* Light background as in the image */
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px;
+    width: 400px; /* Adjust width as needed */
+    text-align: center; /* Center text inside the container */
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Spacing between input groups */
+    text-align: left; /* Align labels/inputs to the left within their group */
+}
+
+.form-group label {
+    display: block; /* Make labels take full width */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex; /* Use flexbox for buttons */
+    justify-content: space-around; /* Distribute buttons */
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#generateBtn {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+#generateBtn:hover {
+    background-color: #0056b3;
+}
+
+#randomizeBtn {
+    background-color: #6c757d; /* Grey */
+    color: white;
+}
+
+#randomizeBtn:hover {
+    background-color: #5a6268;
+}
+
+.output-field input[type="text"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #eee; /* Grey background for readonly field */
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body {
+    font-family: sans-serif;
     padding: 20px;
     background: #f0f0f0;
 }
