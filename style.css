@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#licenseListContainer {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-height: 500px; /* Make it scrollable if the list gets too long */
+    overflow-y: auto;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for the license numbers */
+}
+
+#licenseListContainer ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+#licenseListContainer li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee; /* Light separator between numbers */
+}
+
+#licenseListContainer li:last-child {
+    border-bottom: none; /* No border on the last item */
+}
